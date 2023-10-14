@@ -1,0 +1,117 @@
+body {
+  background-color: #E3C77B;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+}
+body, body * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+body .sound {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  background-color: #574C41;
+  color: #E3C77B;
+  border-radius: 100%;
+  z-index: 10;
+}
+body .sound i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .logo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+  opacity: 0.5;
+}
+body .logo img {
+  width: 48px;
+  height: 48px;
+}
+body .logo:hover {
+  opacity: 1;
+}
+body .score {
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: #574C41;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+body .deetz {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  transition: opacity 0.25s ease;
+  color: #574C41;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-wrap: no-wrap;
+}
+body .deetz.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+body .deetz.front {
+  z-index: 10;
+}
+body .deetz.end.title {
+  top: 50%;
+  background-color: #574C41;
+  padding: 40px 20px;
+  font-size: 60px;
+  border-radius: 3px;
+  color: #E3C77B;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 500px;
+  text-align: center;
+}
+body .deetz.end.button {
+  top: 75%;
+  background-color: #574C41;
+  padding: 20px;
+  font-size: 40px;
+  border-radius: 3px;
+  color: #E3C77B;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+body .deetz.end.tweet {
+  background-color: #1da1f2;
+  color: #E3C77B;
+  padding: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+body canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  z-index: 1;
+}
